@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    font-family: monaco;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 0px;
+    margin-top: -52px;
+    overflow: hidden;
+}
+.firstPage h1{
+    color: brown;
+    text-align: center;
+    font-size: 8vh;
+    padding-top: 15vh
+}
+.firstPage p{
+    color: hotpink;
+    text-align: center;
+    font-size: 10vh
+}
+
+#FirstPage{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url(photos/cartmanD.gif);
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0px -80px;
+}
