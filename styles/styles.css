@@ -9,10 +9,10 @@ body {
 }
 .firstPage h1{
     width: 100%;
-    color: blue;
+    color: red;
     text-align: center;
     font-size: 4vw;
-    padding-top: 5vh;
+    padding-top: 10vh;
 }
 .firstPage img{
     display: block;

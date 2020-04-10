@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'I år och dagar har ni väntat men nu är snart väntan över!';
+var txt = 'I år och dar har ni väntat men nu är snart väntan över!';
 var speed = 50;
 
 function typeWriter() {
