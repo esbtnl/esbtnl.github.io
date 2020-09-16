@@ -35,10 +35,11 @@
 .upper-nav a{
     color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 15px;
 }
 .upper-nav a:hover{
     color: #E5398D;
+    font-weight: bold;
 
 }
 .upper-nav .fab {
@@ -61,6 +62,7 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.3s;
 }
 .nav-links a:hover{
     color: #E5398D;
@@ -93,8 +95,8 @@
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 90vh;
+        top: 10vh;
         background-color: #754022;
         display: flex;
         flex-direction: column;
@@ -103,14 +105,24 @@
         transform: translateX(100%);
         transition: transform 0.05s ease-in;
     }
+   
     .nav-links li{
         opacity: 0;
     }
+    
     .burger{
         display: block;
     }
     .upper-nav{
-        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: baseline;
+        position: relative;
+        top: 0px;
+    }
+    .upper-nav li {
+        padding: 5px 5px 5px 5px ;
     }
 
 }
