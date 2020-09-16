@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+/*All under Navbar*/
+.content{
+    background-color: #F7E623;
+    display: grid;
+    grid-template-columns: 2 1;
+}
+/*The cards section*/
+.content .cards{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    background-color: #F7E623;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border-right: 10px solid #754022;
+}
+/*The Card*/
+.card {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+
+    
+    transition: 0.3s;
+    border-radius: 10px; /* 5px rounded corners */
+    background-color: #E5398D;
+    padding: 20px;
+    width: min-content;
+}
+/*Inside the Card*/
+.content .cards .card{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 17px;
+    color: #754022;
+    padding-left: 10px;
+}
+/*Post on card*/
+.content .cards .card .container p{
+    text-transform: uppercase;
+    font-size: 25;
+    color: #F7E623;
+}
+
+.cards .card .container h4{
+    color: #F7E623;
+    font-size: 25px;
+}
+.cards .card .container .groupie h4{
+    color: #754022;
+    font-size: 22px;
+}
+.content .cards .card .container .groupie p{
+    text-transform: none;
+    color: #ffffff;
+    font-size: 22;
+}
+
+/*Img in card*/
+.content .card img {
+    align-content: center;
+    vertical-align: middle;
+    width: 200px;
+    border-radius: 50%;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #E5398D;
+}
+/*The info section*/
+.content .info{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7E623;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+.content .info .groupie{
+    margin-top: 10px;
+    background-color: aqua;
+}
+/*About section*/
+.content .about{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    border-left: 10px solid #754022;
+    background-color: #F7E623;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about h1{
+    color: #E5398D;
+}
+.about p{
+    color: #754022;
+}
+
+@media screen and (max-width:768px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px;
+    }
+}

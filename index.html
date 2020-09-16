@@ -1,26 +1,164 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAGGA FUCXING SKIFTE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="CSS/navbar.css">
+        <link rel="stylesheet" href="CSS/slideshow.css">
+        <link rel="stylesheet" href="CSS/home.css">
 
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <title>DÖMD</title>
+    </head>
 
-    <script src="scripts/countdown.js"></script>
-    <script src="scripts/typewriter.js"></script>
-    <script src="scripts/start.js"></script>
-
+    <body>
 
 
-</head>
+        <div id="nav">
+            <div class="logo">
+                <img src="CSS/img/D-Group.png" width="75%">
+            </div>
 
-<body onload="start()">
-    <div class="firstPage" id="FirstPage" onload="countDown()">
+            <ul class="nav-links">
+                <li>
+                    <a href="file:///C:/Users/lonnq/Desktop/D-Group/D-Group/domd2021/index.html">Nyheter</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/lonnq/Desktop/D-Group/D-Group/domd2021/whois.html">D-Group 20/21</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/lonnq/Desktop/D-Group/D-Group/domd2021/whois.html">Wall Of Fame</a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/lonnq/Desktop/D-Group/D-Group/domd2021/calendar.html">Festkalender</a>
+                </li>
+                <li>
+                    <a href="#">Arrangemang</a>
+                </li>
+                <li>
+                    <a href="#">Galleri</a>
+                </li>
+                
+            </ul>
 
-        <h1 id="welcome"></h1>
-        <img src="styles/photos/cartmanD.gif" id="img">
-        <p id="countDown"></p>
+            <ul class="upper-nav">
+                <li>
+                    <a href="domd.nu">DÖMD</a>
+                </li>
+                <li>
+                    <a href="d-sektionen.se">D-Sektionen</a>
+                </li>
+                <li>
+                    <a href="domd.nu"><i class="fab fa-snapchat-square"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/DGroup2021"><i class="fab fa-facebook-square"></i></a>
+                </li>
+            </ul>
+            
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
 
-    </div>
 
-</body></html>
+        <div class="content">
+            <div class="slideshow-container">
+                <div class="homeSlides fade">
+                    <div class="numText">1 / 3</div>
+                        <img src="CSS/img/Slide/dgroup2021_ratio.jpg" width="100%"/>
+                        <div class="slideText">
+                            <h1>Lär känna medlemmarna i D-Group!</h1>
+                            <p>Vilka är vi som går runt i Linköpings finaste overaller?</p>
+                        </div>
+                </div>
+                <div class="homeSlides fade">
+                    <div class="numText">2 / 3</div>
+                        <img src="CSS/img/Slide/dgroup1920_ratio.jpg" width="100%" object-fit="cover"/>
+                        <div class="slideText">
+                            <h1>Familjen Aux Vert Douze</h1>
+                            <p>och andra pateter hittar du i vår Wall Of Fame</p>
+                        </div>
+                </div>
+                <div class="homeSlides fade">
+                    <div class="numText">3 / 3</div>
+                        <img src="CSS/img/Slide/dart_ratio.jpg" width="100%"/>
+                        <div class="slideText">
+                            <h1>TAGGA D<span id="domd">ÖM</span>D</h1>
+                            <p>Bara <span id="countdown"></span> sen är det vår!</p>
+                        </div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <br>
+
+                <div class="dots" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            
+            <div class="under-content">
+                <div id="curator-feed-d-group-layout">
+                    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+                </div>
+                <div class="info">
+                    <h1>U-Lag DÖMD</h1>
+                    <p>
+                        Nu är anmälan öppen för U-Lag! Glid in på denna länk för att påbörja registrering. Kontakta oss på <a href="mailto:biljett@d-group.se">biljett@d-group.se</a>  om ni har frågor. 
+                    </p>
+                    <h1>Om Oss</h1>
+                    <p>
+                        D-Group är D-sektionens eminenta festeri. Vi har funnits sedan världen var svart-vit och popcorn inte gick att göra i micron. Innan dess låg vi i mammas kära mage och smed planer om världsherravälde genom pilkastning, ölhäfv och självrökande cigaretter. Vi tycker om att ha kul! 
+                    </p>
+                    <h1>Sponsorer</h1>
+                    <a href=""><img src="CSS/img/Sponsorer/ericsson.png" alt="Ericsson"></a> <br>
+                    <a href=""><img src="CSS/img/Sponsorer/idainfront.png" alt="IdaInfront"></a> <br>
+                    <a href=""><img src="CSS/img/Sponsorer/laserimage.png" alt="LaserImage"></a><br>
+                    <p>Vill ni också synas här? Kontakta oss på <a href="mailto:spons@d-group.se">spons@d-group.se</a>!</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+
+
+        <footer class="footer">
+            <div class="left-foot">
+                <h1>Kontakt</h1>
+                <p>Frågor som rör dart eller dartutrustning ställs till <a href="mailto:dart@d-group.se">dart@d-group.se</a>. Kontakt, övriga frågor, strippförfrågningar, jobbförfrågningar (vi kan jobba på det mesta) eller vad du/ni än må ha på hjärtat görs via mail till <a href="mailto:info@d-group.se">info@d-group.se</a>. Frågor om d-group.se, tentakravallen.se, dömd.nu ställs till <a href="mailto:webb@d-grouo">webb@d-group.se</a>.</p>
+            </div>
+            <div class="right-foot">
+                <h1>Analog</h1>
+                <p>D-Group<br>
+                    Datateknologsektionen<br>
+                    Kårallen, Universitet<br>
+                    581 83 Linköping<br>
+                    Org.nr: 822002-1409<br>
+                    Bg: 436-2497
+                </p>
+            </div>
+        </footer>
+
+        <script src="JS/nav.js"></script>
+        <script src="JS/scroll.js"></script>
+        <script src="JS/slideshow.js"></script>
+        <script src="JS/countdown.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script type="text/javascript">
+            /* curator-feed-d-group-layout */
+            (function(){
+                var i, e, d = document, s = "script";i = d.createElement("script");
+                i.async = 1;
+                i.src = "https://cdn.curator.io/published/fbe610c7-6c4b-4f19-97e8-4aa21a6c2a14.js";
+                e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+            })();
+        </script>        
+    </body>
+</html>
