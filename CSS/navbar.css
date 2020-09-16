@@ -110,6 +110,10 @@
     .burger{
         display: block;
     }
+    .upper-nav{
+        font-size: 20px;
+    }
+
 }
 .nav-active{
     transform: translateX(0%);
