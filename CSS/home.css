@@ -65,5 +65,8 @@
         align-items: center;
         padding: 20px 0px;
     }
+    #curator-feed-d-group-layout{
+        border: none;
+    }
     
 }

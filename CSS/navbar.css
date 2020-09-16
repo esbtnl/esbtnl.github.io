@@ -47,7 +47,6 @@
 .nav-links{
     display: flex;
     justify-content: space-evenly;
-    border-top: 2px solid#E5398D;
     width: 75%;
 }
 .nav-links li{
