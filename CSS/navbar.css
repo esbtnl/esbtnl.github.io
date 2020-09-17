@@ -1,19 +1,20 @@
 #nav{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 20px 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #754022;
     z-index: 1000;
     width: 100%;
-
 }
 /*From the JS sticks the navBar to the top*/
 .sticky{
-    position: fixed;
+    position: sticky;
     top: 0;
 }
+
+/*The navbar over*/
 .upper-nav{
     display: flex;
     justify-content: center;
@@ -39,7 +40,6 @@
 }
 .upper-nav a:hover{
     color: #E5398D;
-    font-weight: bold;
 
 }
 .upper-nav .fab {
@@ -49,6 +49,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 75%;
+    border-top: 2px solid #E5398D;
 }
 .nav-links li{
     list-style: none;
@@ -70,6 +71,7 @@
 .burger{
     display: none;
     cursor: pointer;
+    padding-right: 30px;
 }
 .burger div{
     width: 25px;
@@ -78,17 +80,17 @@
     margin: 5px;
     transition: all 0.3s ease;
 }
-@media screen and (max-width:1024px){
-    .nav-links{
-        display: flex;
-        justify-content: space-around;
-        width:75%;
-    }
-    #nav{
-        justify-content: flex-start;
-    }
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
-@media screen and (max-width:768px){
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width:1024px){
     body{
         overflow-x: hidden;
     }
@@ -97,12 +99,14 @@
         right: 0px;
         height: 90vh;
         top: 10vh;
+        border-radius: 10px;
+        border: 2px solid #E5398D;
         background-color: #754022;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%);
+        transform: translateX(150%);
         transition: transform 0.05s ease-in;
     }
    
@@ -120,6 +124,7 @@
         align-items: baseline;
         position: relative;
         top: 0px;
+        margin-left: 20px;
     }
     .upper-nav li {
         padding: 5px 5px 5px 5px ;
@@ -133,7 +138,7 @@
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(500px);
     }
     to{
         opacity: 1;
@@ -141,15 +146,6 @@
     }
 }
 
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2{
-    opacity: 0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
 /*Footer*/
 .footer{
     display: flex;
@@ -162,6 +158,7 @@
     width: 100%;
     background-color:#754022;
     padding: 20px 20px 20px 20px;
+    z-index: -1;
 }
 .left-foot{
     width: 50%;

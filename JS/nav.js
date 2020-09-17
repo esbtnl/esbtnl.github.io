@@ -26,10 +26,25 @@ const navSlide = () => {
 
 navSlide();
 
+var lastScrollTop = 0;
+
+window.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop; 
+   
+    if (st > lastScrollTop){
+        unStick()
+    } 
+    else {
+        stick()
+    }
+   lastScrollTop = st <= 0 ? 0 : st; 
+   // For Mobile or negative scrolling
+}, false);
+
 //Stick the Navbar
-
+/*
 window.onscroll = function() {stick()};
-
+*/
 var navBar = document.getElementById("nav");
 var sticky = navBar.offsetTop;
 
@@ -38,5 +53,14 @@ function stick() {
         navBar.classList.add("sticky")
     }else{
         navBar.classList.remove("sticky")
+    }
+}
+function unStick(){
+    if(window.pageYOffset > sticky){
+        navBar.classList.remove("sticky")
+
+    }else{
+        navBar.classList.add("sticky")
+
     }
 }

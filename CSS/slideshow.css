@@ -8,17 +8,6 @@
 .homeSlides{
     display: none;
 }
-.slideText{
-    font-family: 'Trebuchet MS';
-    color: #ffffff;
-    font-size: 2.5vw;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 35%;
-    width: 100%;
-    text-align: center;
-}
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -39,6 +28,16 @@
 }
 .prev:hover, .next:hover{
     background-color: rgba(0, 0, 0, 0.8);
+}
+.slideText{
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+    font-size: 2.5vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    text-align: center;
 }
 .numText{
     color: azure;
